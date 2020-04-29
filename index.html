@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel ="stylesheet" href="./css/YoutubeDownloader.css"/>
+    <meta charset="UTF-8">
+    <title>Youtube Downloader</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter Youtube URL</h1>
+      <form>
+        <input type="text" id="url" name="url">
+        <div>
+          <button class="btn" id="download" type="button">Download</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>require('./src/Downloader.js')</script>
+</html>
